@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Cadastro</title>
+    <link href="pagina.css" rel="stylesheet">
+</head>
+<body>
+    <div class="Form">  
+       <h1 class="cadastro">Cadastro</h1>
+    
+    <form action="http://www.thiagomiranda.net/formulario.php" method="POST">
+    <div class="cadastro2">
+      <label>Nome:
+        <input type="text" name="nome"placeholder="Digite seu nome completo">
+        </label>    
+    </div>
+        <br>
+    <div class="cadastro2">
+        <label>Email:
+            <input type="text" name="email"placeholder="Infotrme um email válido">
+        </label>    
+    </div>
+        <br>
+        <div class="cadastro2">
+            <label>Data de nascimento
+            <input type="date" name="dtnas">
+            </label>
+        </div>
+            <br>
+        <div class="cadastro2">
+            <fildset>
+            <legend>SEXO:</legend>
+                <label for="sexoM">Masculino</label>
+                    <input type="radio" name="sexo" value="Masculino" id="sexoM" checked>
+                <label for="sexoF">Feminino</label>
+                    <input type="radio" name="sexo" value="Feminino" id="sexoF">
+            </fildset>
+            </div>
+            <br>
+         <div class="cadastro2">
+             <fildset>
+            <legend>Formas de Pagamento Mais Acessivel:</legend>
+             <label>
+                <input type="radio" name="pagamento" value="Cartão">
+                    Cartão
+                 </label>
+            <label>
+                <input type="radio" name="pagamento" value="Boleto">
+                    Boleto
+                 </label>
+                 <label>
+            <input type="radio"name="pagamento"value="Pix">
+                    Pix
+                </label>
+                </fildset>
+            </div>
+            <br>
+        <div class="cadastro2">
+            <label>Qual Categoria Seu Produto Pertence:
+                <select name="Qual Categoria Seu Produto Pertence">
+                    <option value=""selected></option>
+                    <option value="Boné">Boné</option>
+                    <option value="Regata"> Regata</option>
+                    <option value="Camisa"> Camisa</option>
+                    <option value="Short"> Short</option>
+                    <option value="Calça"> Calça</option>
+                    
+                </select>
+            </label>
+        </div>
+            <br>
+         <div class="cadastro2">
+            <label for="campocomentario">Digite Algum Comentario Desejado Aqui:</label>
+            <br>
+                <textarea name=comentario"" id="campocomentario" rows=5 cols="50"></textarea>
+        </div>
+            <br>
+        <div class="cadastro2">
+            <label>Data Do Cadastramento:
+            <input type="date" name="dtnas">
+            </label>
+        </div>
+            <br>
+        <div class="cadastro2">
+            <label>Nota para nosso Site:
+                <input type="number" name="nota" min="0" max="10" step="1">  
+            </label>
+        </div>
+            <br>
+          <div class="cadastro2">
+            <button type="submit">Enviar Cadastro</button>
+            <button type="reset">Refazer Cadastro</button>
+        </div>
+    </form>
+    </div>    
+</body>
